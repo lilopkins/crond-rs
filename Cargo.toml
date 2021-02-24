@@ -1,0 +1,20 @@
+[package]
+name = "crond"
+description = "A simple Rust crond implementation."
+version = "0.1.0"
+authors = ["Lily Hopkins <lilopkins@outlook.com>"]
+edition = "2018"
+license = "MIT"
+homepage = "https://github.com/lilopkins/crond-rs"
+repository = "https://github.com/lilopkins/crond-rs"
+
+[profile.release]
+lto = true
+panic = "abort"
+
+[dependencies]
+chrono = "0.4.19"
+clap = "2.33.3"
+cron-parser = "0.7.9"
+log = "0.4.14"
+pretty_env_logger = "0.4.0"
