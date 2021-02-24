@@ -12,9 +12,19 @@ repository = "https://github.com/lilopkins/crond-rs"
 lto = true
 panic = "abort"
 
+[[bin]]
+name = "crond"
+path = "src/crond.rs"
+
+[[bin]]
+name = "crontab"
+path = "src/crontab.rs"
+
 [dependencies]
+app_dirs = "1.2.1"
 chrono = "0.4.19"
 clap = "2.33.3"
 cron-parser = "0.7.9"
 log = "0.4.14"
 pretty_env_logger = "0.4.0"
+rustyline = "7.1.0"
